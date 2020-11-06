@@ -13,13 +13,13 @@
 </head>
 <body class="is-preload">
     {% load static %}
-    <p><a href="index.html" ><img src="{% static 'app/img/back.png' %}" alt="volver"></a> Volver</p>
+    <p><a href="{% url 'index' %}" ><img src="{% static 'app/img/back.png' %}" alt="volver"></a> Volver</p>
     <div class="contenedor">
         <header>
             <div class="logo">
                 <div class="imagen">
                     {% load static %}
-                    <a href="index.html"><img src="{% static 'app/img/logo.png' %}" class="responsive"  alt="Logo"></a>
+                    <a href="{% url 'index' %}"><img src="{% static 'app/img/logo.png' %}" class="responsive"  alt="Logo"></a>
                 </div>
                 <p>Galeria InfoMigrantes</p>               
                 
