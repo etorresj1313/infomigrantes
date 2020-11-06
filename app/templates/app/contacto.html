@@ -13,7 +13,7 @@
     <body>
         {% load static %}
         <h1><img src="{% static 'app/img/logo.png' %}" class="responsive2" alt="">   Formulario de Registro</h1>
-        <p><a href="index.html" ><img src="{% static 'app/img/back.png' %}" alt="volver"></a>Volver</p>
+        <p><a href="{% url 'index' %}" ><img src="{% static 'app/img/back.png' %}" alt="volver"></a>Volver</p>
     	<form action="send_form_to_server" method="post" enctype="application/x-www-form-urlencoded">	
 			<fieldset>
                  <h2> DATOS PERSONALES </h2>
