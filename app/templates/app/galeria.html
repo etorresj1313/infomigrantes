@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/a28965539f.js" crossorigin="anonymous"></script>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'app/assets/css/estilos.css' %}">
+    <title>Galeria InfoMigrantes</title>    
+
+</head>
+<body class="is-preload">
+    {% load static %}
+    <p><a href="index.html" ><img src="{% static 'app/img/back.png' %}" alt="volver"></a> Volver</p>
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <div class="imagen">
+                    {% load static %}
+                    <a href="index.html"><img src="{% static 'app/img/logo.png' %}" class="responsive"  alt="Logo"></a>
+                </div>
+                <p>Galeria InfoMigrantes</p>               
+                
+            </div>
+            <form>
+                <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+            </form>
+            <div class="categorias" id="categorias">
+                <a href="#" class="activo">Todos</a>
+                <a href="#">Haiti</a>
+                <a href="#">Argentina</a>
+                <a href="#">Venezuela</a>
+                <a href="#">Peru</a>
+                <a href="#">Bolivia</a>
+                <a href="#">Colombia</a>
+                <a href="#">Noticias</a>
+            </div>
+        </header>
+        <section class="grid" id="grid">
+            <div class="item" 
+                data-categoria="haiti" 
+                data-etiquetas="agrupacion fundacion"
+                data-descripcion="Fundación An Nou Pale"
+                data-link="Ir a Pagina"
+            >
+                <div class="item-contenido">
+                    {% load static %}
+                    <img src="{% static 'app/img/fundacionannoupale.jpg' %}" alt="">
+                </div>
+
+            </div>
+
+            <div class="item" 
+            data-categoria="argentina" 
+            data-etiquetas="turismo argentina"
+            data-descripcion="Turismo Argentino en Chile"
+            data-link="Ir a Pagina"
+            >
+                <div class="item-contenido">
+                    {% load static %}
+                    <img src="{% static 'app/img/turismoargentino.jpg' %}" alt="">
+                </div>
+
+            </div>
+
+            <div class="item" 
+            data-categoria="noticias" 
+            data-etiquetas="covid coronavirus noticias"
+            data-descripcion="Coronavirus"
+            data-link="Ir a Pagina"
+            >
+                <div class="item-contenido">
+                    {% load static %}
+                    <img src="{% static 'app/img/Coronavirus.jpg' %}" alt="">
+                </div>
+
+            </div>
+
+            <div class="item" 
+            data-categoria="colombia" 
+            data-etiquetas="agrupacion fundacion"
+            data-descripcion="Agrupación Folklorica Tierra Querida"
+            data-link="Ir a Pagina"
+            >
+                <div class="item-contenido">
+                    {% load static %}
+                    <img src="{% static 'app/img/tierraquerida.jpg' %}" alt="">
+                </div>
+
+            </div>
+
+            <div class="item" 
+            data-categoria="peru" 
+            data-etiquetas="agrupacion fundacion peru noticias"
+            data-descripcion="Agrupación Los Cholos en FILSA"
+            data-link="Ir a Pagina"
+            >
+                <div class="item-contenido">
+                    {% load static %}
+                    <img src="{% static 'app/img/feriadellibro.jpg' %}" alt="">
+                </div>
+
+            </div>
+
+            <div class="item" 
+            data-categoria="bolivia" 
+            data-etiquetas="bolivia ejercito noticias"
+            data-descripcion="Retorno de Bolvianos y ayuda del Ejercito"
+            data-link="Ir a Pagina"
+            >
+                <div class="item-contenido">
+                    {% load static %}
+                    <img src="{% static 'app/img/bolivianosvarados.png' %}" alt="">
+                </div>
+
+            </div>
+
+            <div class="item" 
+            data-categoria="noticias" 
+            data-etiquetas="bolivia ejercito noticias"
+            data-descripcion="Nueva Ley Migratoria"
+            data-link="Ir a Pagina"
+            >
+                <div class="item-contenido">
+                    {% load static %}
+                    <img src="{% static 'app/img/leymigracion.jpg' %}" alt="">
+                </div>
+
+            </div>
+            
+            <div class="item" 
+            data-categoria="venezuela" 
+            data-etiquetas="asociación venezuela agrupacion"
+            data-descripcion="AsoVenChile Asociación Venezolana En Chile"
+            data-link="Ir a Pagina"
+            >
+                <div class="item-contenido">
+                    {% load static %}
+                    <img src="{% static 'app/img/asovenchile.png' %}" alt="">
+                </div>
+
+            </div>
+
+            <div class="item" 
+            data-categoria="venezuela" 
+            data-etiquetas="asociación venezuela agrupacion"
+            data-descripcion="Danzas Venezolanas en Chile"
+            data-link="Ir a Pagina"
+            >
+                <div class="item-contenido">
+                    {% load static %}
+                    <img src="{% static 'app/img/danzasvenezolanas.jpg' %}" alt="">
+                </div>
+
+            </div>
+        </section>
+
+        <section class="overlay" id="overlay">
+            <div class="contenedor-img">
+                <button id="btn-cerrar-popup"><i class="far fa-times-circle"></i></button>
+            </div>
+            <p class="descripcion"></p>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.3/dist/muuri.min.js"></script>
+    {% load static %}
+    <script src="{% static 'app/assets/js/main2.js' %}"></script>
+</body>
+</html>

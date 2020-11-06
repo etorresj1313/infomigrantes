@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="es-419">
+	<head>
+		<title>Sitio de Ayuda Para Inmigrantes</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		{% load static %}
+		<link rel="stylesheet" href="{% static 'app/assets/css/main.css' %}" />
+		{% load static %}
+		<noscript><link rel="stylesheet" href="{% static 'app/assets/css/noscript.css' %}" /></noscript>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body class="is-preload">
+			<div id="wrapper">
+					<header id="header">
+						<div class="logo">
+							{% load static %}
+							<img src="{% static 'app/img/logo1.png' %}" alt="Logo">
+						</div>
+						<div>	<h1>¡Bienvenidos a InfoMigrantes!</h1>
+						</div>
+						<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+						<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+						<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+							  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							</ol>
+							<div class="carousel-inner">
+							  <div class="carousel-item active">
+								{% load static %}}
+								<img src="{% static 'app/img/colombianos.jpg' %}" alt="Primer slide">
+							  </div>
+							  <div class="carousel-item">
+								{% load static %}}
+								<img src="{% static 'app/img/peruanos.jpg' %}" alt="Segundo slide">
+							  </div>
+							  <div class="carousel-item">
+								{% load static %}}
+								<img src="{% static 'app/img/venezolanos.jpg' %}" alt="Tercer slide">
+							  </div>
+							</div>
+							<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+							  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							  <span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+							  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+							  <span class="sr-only">Next</span>
+							</a>
+						  </div>
+						<nav>
+							<ul>
+								<li><a style="text-decoration:none;color: white;" href="index.html">Inicio</a></li>
+								<li><a style="text-decoration:none;color: white;" href="galeria.html">Galería</a></li>
+								<li><a style="text-decoration:none;color: white;" href="contacto.html">Contacto</a></li>
+							</ul>
+						</nav>
+					</header>
+					<div>
+						<P> </p>
+							<article id="intro">
+								<h2>Introducción</h2>
+								<p> </p>
+								<p>Bienvenidos a nuestro sitio hermanos. Este sitio fue diseñado para poder apoyarlos y guiarlos en sus trámites migratorios. Además de contar con información de los sitios de mayor importancia, recomendaremos algunas redes de apoyo para poder facilitar tu integración mientras estas en nuestro país.</p>
+								<p>También si necesitas que podamos ayudarte en recordar las fechas de tus trámites importantes, contamos con un servicio que al momento de registrarte, se habilitara un panel de control personalizado, según tus necesidades y el tipo de trámite que estés realizando, el sitio generará alertas a las fechas y plazos necesarios.</p>
+								<p>Gracias por visitarnos y esperamos ser una ayuda o apoyo para ti!</p>
+							</article>
+					</div>
+					<footer id="footer">
+						<p>Sitio de Ayuda para Inmigrantes - 2020</p>
+					</footer>
+			</div>
+			<div id="bg"></div>
+			{% load static %}
+			<script src="{% static 'app/assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'app/assets/js/browser.min.js' %}"></script>
+			<script src="{% static 'app/assets/js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'app/assets/js/util.js' %}"></script>
+			<script src="{% static 'app/assets/js/main.js' %}"></script>
+	</body>
+</html>
