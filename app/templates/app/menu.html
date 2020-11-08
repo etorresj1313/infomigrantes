@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="es-419">
+	<head>
+		<title>Sitio de Ayuda Para Inmigrantes</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		{% load static %}
+		<link rel="stylesheet" href="{% static 'app/assets/css/main.css' %}" />
+		<noscript><link rel="stylesheet" href="{% static 'app/assets/css/noscript.css' %}" /></noscript>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body class="is-preload">
+			<div id="wrapper">
+					<header id="header">
+						<div>
+							{% load static %}
+							<img class="img-fluid" src="{% static 'app/img/migration.png' %}" alt="Logo">
+						</div>
+						<div>	<h1>Usuarios del Sistema</h1>
+						</div>
+						<nav>
+							<ul>
+								<li><a style="text-decoration:none;color: white;" href="{% url 'agregar' %}">Agregar</a></li>
+								<li><a style="text-decoration:none;color: white;" href="{% url 'listar' %}">Listar</a></li>
+								<li><a style="text-decoration:none;color: white;" href="{% url 'modlista' %}">Modificar</a></li>
+								<li><a style="text-decoration:none;color: white;" href="{% url 'elimlista' %}">Eliminar</a></li>
+								<li><a style="text-decoration:none;color: white;" href="{% url 'index' %}">Inicio</a></li>
+							</ul>
+						</nav>
+					</header>
+					<footer id="footer">
+						<p>Sitio de Ayuda para Inmigrantes - 2020</p>
+					</footer>
+			</div>
+			<div id="bg"></div>
+			{% load static %}
+			<script src="{% static 'app/assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'app/assets/js/browser.min.js' %}"></script>
+			<script src="{% static 'app/assets/js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'app/assets/js/util.js' %}"></script>
+			<script src="{% static 'app/assets/js/main.js' %}"></script>
+	</body>
+</html>
