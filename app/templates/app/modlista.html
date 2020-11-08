@@ -9,7 +9,7 @@
     {% load static %}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'app/assets/css/estilos2.css' %}">
-    <title>Agregar Usuarios</title>    
+    <title>Modificar / Eliminar Usuarios</title>    
 
 </head>
 <body>
@@ -22,31 +22,36 @@
                     {% load static %}
                     <a href="{% url 'menu' %}"><img src="{% static 'app/img/logo.png' %}" class="responsive"  alt="Logo"></a>
                 </div>
-                <p>Agregar Usuarios</p>       
+                <p>Modificación de Usuarios</p>       
             </div>                 
         </header>
+     
+        <table class="table table-striped table-hover table-responsive-sm">
+            <tr>
+                <th>Rut</th>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Nacionalidad</th>
+                <th>Correo</th>
+                <th>Telefono</th> 
+                <th>Opciones</th> 
+            </tr>
 
+            {% for u in usuarios %}
 
-                <div class="row">
-                    <div class="col-12 col-md-6 offset-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                        <form action="" method="post">
+            <tr>
+                <td>{{ u.rut | title}}</td>
+                <td>{{ u.nombres | title}}</td>
+                <td>{{ u.apellidos | title}}</td>
+                <td>{{ u.nacionalidad | title}}</td>
+                <td>{{ u.correo }}</td>
+                <td>{{ u.telefono | title}}</td>
+                <td><a href="{% url 'modificar' u.rut %}" class="btn btn-info btn-sm">Modificar</a></td>
+            </tr>
 
-                            {% csrf_token %}
-                            {{ form }}
-                            <div class="d-flex justify-content-end">
-                                <input type="reset" value="Cancelar" class="btn btn-secondary">
-                                &nbsp;
-                                <input type="submit" value="Guardar" class="btn btn-primary">
-                            </div>
-                        </form>
-                        {{mensaje}}
-                    </div>
-                </div>
+            {% endfor %}
 
-            </div>
-        </div>
+        </table>
 
     </div>
 
