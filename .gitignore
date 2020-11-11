@@ -1,0 +1,6 @@
+app/__pycache__/*
+
+app/migrations/*
+
+infomigrantes/__pycache__/*
+
