@@ -1,16 +1,15 @@
 from django.db import models
 
+
 class Users(models.Model):
-    rutpass = models.CharField(max_length=200, default='', blank=False)
-    apellidos = models.CharField(max_length=200, default='', blank=False)
-    nombres = models.CharField(max_length=200, default='', blank=False)
-    fechanac = models.DateField(default='', blank=False)
-    pais = models.CharField(max_length=200, default='')
     correo = models.EmailField(max_length=200, default='')
-    foto = models.ImageField(upload_to='images/', default='')
+    nombres = models.CharField(max_length=200, default='', blank=False)
+    apellidos = models.CharField(max_length=200, default='', blank=False)
+    pais = models.CharField(max_length=200, default='', blank=False)
+    consulta = models.TextField(max_length=500, default='')
 
     def __str__(self):
-        return self.rutpass
+        return self.correo
 
 class Agregar(models.Model):
     rut = models.CharField(max_length=200, default='', blank=False)
@@ -25,6 +24,14 @@ class Agregar(models.Model):
 
     def __str__(self):
         return self.rut
+
+
+
+
+
+
+
+
 
 
 

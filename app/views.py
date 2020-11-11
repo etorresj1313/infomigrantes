@@ -8,7 +8,18 @@ def index(request):
 def menu(request):
     return render(request, 'app/menu.html', {}) 
 def contacto(request):
-    return render(request, 'app/contacto.html', {}) 
+    data = {
+        'form': UsersForm()
+    }    
+    if request.method == 'POST':        
+        formulario = UsersForm(data=request.POST)
+        if formulario.is_valid():
+            formulario.save()
+            data["mensaje"] = "Guardado Correctamente"
+        else:
+            data["form"] = formulario
+    return render(request, 'app/contacto.html', {})
+    
 def galeria(request):
     return render(request, 'app/galeria.html', {})
 def agregar(request):
