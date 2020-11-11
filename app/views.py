@@ -15,10 +15,10 @@ def contacto(request):
         formulario = UsersForm(data=request.POST)
         if formulario.is_valid():
             formulario.save()
-            data["mensaje"] = "Guardado Correctamente"
+            data["mensaje"] = "Enviado Correctamente"
         else:
             data["form"] = formulario
-    return render(request, 'app/contacto.html', {})
+    return render(request, 'app/contacto.html', data)
     
 def galeria(request):
     return render(request, 'app/galeria.html', {})
