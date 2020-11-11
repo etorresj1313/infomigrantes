@@ -16,7 +16,7 @@ class Agregar(models.Model):
     nombres = models.CharField(max_length=200, default='', blank=False)
     apellidos = models.CharField(max_length=200, default='', blank=False)    
     edad = models.IntegerField()
-    fecha_nacimiento = models.DateField(default='', blank=False)    
+    fecha_creacion = models.DateField(default='', blank=False)    
     nacionalidad = models.CharField(max_length=200, default='')
     direccion = models.CharField(max_length=200, default='')
     correo = models.EmailField(max_length=200, default='')
