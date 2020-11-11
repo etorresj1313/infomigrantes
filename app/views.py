@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect, get_object_or_404
 from .models import Agregar, Users
-from .forms import AgregarForm
+from .forms import AgregarForm, UsersForm
 
 # Create your views here.
 def index(request):
