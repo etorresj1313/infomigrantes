@@ -15,5 +15,5 @@ class AgregarForm(forms.ModelForm):
         fields = '__all__'
 
         widgets = {
-            "fecha_nacimiento": forms.widgets.SelectDateWidget()
+            "fecha_creacion": forms.widgets.SelectDateWidget()
         }
