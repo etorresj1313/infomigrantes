@@ -4,7 +4,11 @@ from .forms import AgregarForm, UsersForm
 
 # Create your views here.
 def index(request):
-    return render(request, 'app/index.html', {}) 
+    return render(request, 'app/index.html', {})
+def indexc(request):
+    return render(request, 'app/indexc.html', {}) 
+def indexi(request):
+    return render(request, 'app/indexi.html', {}) 
 def menu(request):
     return render(request, 'app/menu.html', {}) 
 def contacto(request):
@@ -22,6 +26,10 @@ def contacto(request):
     
 def galeria(request):
     return render(request, 'app/galeria.html', {})
+def galeriac(request):
+    return render(request, 'app/galeriac.html', {})
+def galeriai(request):
+    return render(request, 'app/galeriai.html', {})
 def agregar(request):
 
     data = {
