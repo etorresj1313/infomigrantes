@@ -55,8 +55,16 @@
 							<ul>
 								<li><a style="text-decoration:none;color: white;" href="{% url 'index' %}">Inicio</a></li>
 								<li><a style="text-decoration:none;color: white;" href="{% url 'galeria' %}">Galería</a></li>
-								<li><a style="text-decoration:none;color: white;" href="{% url 'contacto' %}">Contacto</a></li>
-								<li><a style="text-decoration:none;color: white;" href="{% url 'menu' %}">Usuarios</a></li>
+								<li><a style="text-decoration:none;color: white;" href="{% url 'contacto' %}">Contacto</a></li>								
+								{% if user.is_authenticated %}
+								<li>
+									<a href="{% url 'logout' %}">cerrar sesión</a>
+								</li>
+								{% else %}
+								<li>
+									<a href="{% url 'login' %}">Usuarios</a>
+								</li>
+								{% endif %}
 							</ul>
 						</nav>
 					</header>
