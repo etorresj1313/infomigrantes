@@ -26,7 +26,12 @@
 						<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 						<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 						<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-						<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+						<nav>
+							<ul>
+								<li><a style="text-decoration:none;color: white;" href="{% url 'menu' %}">Ouvri Sesyon An</a></li>
+							</ul>
+						</nav>
+							<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 							<ol class="carousel-indicators">
 							  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 							  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -59,8 +64,8 @@
 							<ul>
 								<li><a style="text-decoration:none;color: white;" href="{% url 'indexc' %}">Kòmanse</a></li>
 								<li><a style="text-decoration:none;color: white;" href="{% url 'galeriac' %}">Galeri</a></li>
+								<li><a style="text-decoration:none;color: white;" href="{% url 'quienesc' %}">Sou Nou</a></li>
 								<li><a style="text-decoration:none;color: white;" href="{% url 'contacto' %}">Kontakte</a></li>
-								<li><a style="text-decoration:none;color: white;" href="{% url 'menu' %}">Itilizatè</a></li>
 							</ul>
 						</nav>
 					</header>
@@ -69,11 +74,16 @@
 							<article id="intro">
 								<h2>Entwodiksyon</h2>
 								<p> </p>
-								<p>Byenveni nan sit frè nou yo. Sit sa a te fèt pou kapab sipòte ak gide ou nan pwosedi imigrasyon ou yo. Anplis de sa nan gen enfòmasyon sou sit sa yo ki pi enpòtan, nou pral rekòmande kèk rezo sipò fasilite entegrasyon ou pandan w ap nan peyi nou an.</p>
-								<p>Epitou si ou bezwen nou ede ou sonje dat yo nan pwosedi enpòtan ou, nou gen yon sèvis ki nan moman enskripsyon an, yon panèl kontwòl pèsonalize yo pral pèmèt, selon bezwen ou yo ak ki kalite pwosedi w ap pote soti, sit la pral jenere alèt yo dat ki nesesè yo ak dat limit yo.</p>
+								<p>Byenveni nan sit frè nou yo. Sit sa a te fèt pou kapab sipòte ak gide ou nan pwosedi imigrasyon ou yo. </p>
+								<p>Anplis de sa nan gen enfòmasyon sou sit sa yo ki pi enpòtan, nou pral rekòmande kèk rezo sipò fasilite entegrasyon</p>
+								<p>ou pandan w ap nan peyi nou an. Epitou si ou bezwen nou ede ou sonje dat yo nan pwosedi enpòtan ou, nou gen yon sèvis</p>
+								<p>ki nan moman enskripsyon an, yon panèl kontwòl pèsonalize yo pral pèmèt, selon bezwen ou yo ak ki kalite pwosedi w ap</p>
+								<p>pote soti, sit la pral jenere alèt yo dat ki nesesè yo ak dat limit yo.</p>
+								<P> </p>
 								<p>Mèsi pou vizite nou e nou espere ke yo pral nan èd oswa sipò pou ou!</p>
 							</article>
 					</div>
+					<P> </p>
 					<footer id="footer">
 						<p>Sit Èd Imigran an - 2020</p>
 					</footer>

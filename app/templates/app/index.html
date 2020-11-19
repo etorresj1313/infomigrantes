@@ -17,16 +17,21 @@
 							{% load static %}
 							<img class="img-fluid" src="{% static 'app/img/logo1.png' %}" alt="Logo">
 						</div>
-						<div>	<h1>¡Bienvenidos a InfoMigrantes!</h1>
+						<div>	<h1>¡Bienvenidos a InfoMigrantes!</h1></div>
+						<div>
+								<a href="{% url 'indexc' %}"><img class="img-fluid" src="{% static 'app/img/haiti.png' %}" alt="haiti"></a>
+								<a href="{% url 'indexi' %}"><img class="img-fluid" src="{% static 'app/img/ingles.png' %}" alt="ingles"></a>
+								<a href="{% url 'index' %}"><img class="img-fluid" src="{% static 'app/img/espanol.png' %}" alt="español"></a>
 						</div>
-						<div><a href="{% url 'indexc' %}"><img class="img-fluid" src="{% static 'app/img/haiti.png' %}" alt="haiti"></a>
-							<a href="{% url 'indexi' %}"><img class="img-fluid" src="{% static 'app/img/ingles.png' %}" alt="ingles"></a>
-							<a href="{% url 'index' %}"><img class="img-fluid" src="{% static 'app/img/espanol.png' %}" alt="español"></a>
-						</div>
-						<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-						<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-						<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-						<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+							<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+							<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+							<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+					<nav>
+						<ul>
+							<li><a style="text-decoration:none;color: white;" href="{% url 'menu' %}">Iniciar Sesión</a></li>
+						</ul>
+					</nav>
+					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 							<ol class="carousel-indicators">
 							  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 							  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -59,8 +64,8 @@
 							<ul>
 								<li><a style="text-decoration:none;color: white;" href="{% url 'index' %}">Inicio</a></li>
 								<li><a style="text-decoration:none;color: white;" href="{% url 'galeria' %}">Galería</a></li>
+								<li><a style="text-decoration:none;color: white;" href="{% url 'quienes' %}">Quienes Somos</a></li>
 								<li><a style="text-decoration:none;color: white;" href="{% url 'contacto' %}">Contacto</a></li>
-								<li><a style="text-decoration:none;color: white;" href="{% url 'menu' %}">Usuarios</a></li>
 							</ul>
 						</nav>
 					</header>
@@ -69,11 +74,17 @@
 							<article id="intro">
 								<h2>Introducción</h2>
 								<p> </p>
-								<p>Bienvenidos a nuestro sitio hermanos. Este sitio fue diseñado para poder apoyarlos y guiarlos en sus trámites migratorios. Además de contar con información de los sitios de mayor importancia, recomendaremos algunas redes de apoyo para poder facilitar tu integración mientras estas en nuestro país.</p>
-								<p>También si necesitas que podamos ayudarte en recordar las fechas de tus trámites importantes, contamos con un servicio que al momento de registrarte, se habilitara un panel de control personalizado, según tus necesidades y el tipo de trámite que estés realizando, el sitio generará alertas a las fechas y plazos necesarios.</p>
+								<p>Bienvenidos a nuestro sitio hermanos. Este sitio fue diseñado para poder apoyarlos y guiarlos en sus trámites migratorios.</p>
+								<p>Además de contar con información de los sitios de mayor importancia, recomendaremos algunas redes de apoyo para poder</p>
+								<p>facilitar tu integración mientras estas en nuestro país. También si necesitas que podamos ayudarte en recordar las fechas</p>
+								<p>de tus trámites importantes, contamos con un servicio que al momento de registrarte, se habilitara un panel de control </p>
+								<p>personalizado, según tus necesidades y el tipo de trámite que estés realizando, el sitio generará alertas a las fechas y</p>
+								<p>plazos necesarios.</p>
+								<P> </p>
 								<p>Gracias por visitarnos y esperamos ser una ayuda o apoyo para ti!</p>
 							</article>
 					</div>
+					<P> </p>
 					<footer id="footer">
 						<p>Sitio de Ayuda para Inmigrantes - 2020</p>
 					</footer>

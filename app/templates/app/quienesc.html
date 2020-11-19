@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="es-419">
+	<head>
+		<title>Sit Èd Imigran An</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		{% load static %}
+		<link rel="stylesheet" href="{% static 'app/assets/css/main.css' %}" />
+		<noscript><link rel="stylesheet" href="{% static 'app/assets/css/noscript.css' %}" /></noscript>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			{% load static %}
+			<p><a href="{% url 'index' %}"><img src="{% static 'app/img/back.png' %}" alt="volver"></a> Retounen</p>
+			<P> </p>
+				<header id="header">
+				<div>
+					{% load static %}
+					<img class="img-fluid" src="{% static 'app/img/delogo.png' %}" alt="Logo">
+				</div>
+				<div>	<h1>Sou Nou</h1>
+				</div>
+			</header>
+						<P> </p>
+							<article id="intro">
+								<p> </p>
+								<p>Nou se yon jenn konpayi dedye a informatique. Nou se yon ekip ki gen eksperyans nan diferan branch nan disiplin nou yo ak nou pasyone sou sa nou fè.</p>
+								<p>Nou kwè ke atravè teknoloji enfòmasyon nou ka yon kontribisyon pou moun ki prefere nou yo epi yo vin fasilitatè nan lide ke kliyan nou yo bezwen.</p>
+								<p>Mèsi pou chwazi nou</p>
+							</article>		
+							<img class="img-fluid" src="{% static 'app/img/informaticos.jpg' %}" alt="Logo">				
+							<p> </p>
+							<h2>Misyon Nou</h2>
+							<article id="intro">
+								<p> </p>
+								<p>Nan pwojè sosyal sa a nou vle kontribye nan yon pwoblèm ki souvan rive nan peyi nou an. Pwoblèm sa a fè fas ak popilasyon imigran ki fèk rive.</p>
+								<p>Anpil moun ki imigran souvan gen pwoblèm nan pwosesis entegrasyon ak dokiman yo. Epitou kòm yon sosyete nou pa senpatik avèk yo.</p>
+								<p>Nou vle chanje sa a ak sa nou fè nou gen sekirite ke nou ka kontribye yon grenn sab nan kòz sa a. Nou vle remèsye depatman imigrasyon</p> 
+								<p>ki te kontribye nan pwojè sa a.</p>
+							</article>
+							<p> </p>
+							<img class="img-fluid" src="{% static 'app/img/extrangeria.png' %}" alt="Logo">			
+					<footer id="footer">
+						<p>Sit Èd Imigran An - 2020</p>
+					</footer>
+			</div>
+			<div id="bg"></div>
+			{% load static %}
+			<script src="{% static 'app/assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'app/assets/js/browser.min.js' %}"></script>
+			<script src="{% static 'app/assets/js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'app/assets/js/util.js' %}"></script>
+			<script src="{% static 'app/assets/js/main.js' %}"></script>
+	</body>
+</html>

@@ -30,6 +30,12 @@ def galeriac(request):
     return render(request, 'app/galeriac.html', {})
 def galeriai(request):
     return render(request, 'app/galeriai.html', {})
+def quienes(request):
+    return render(request, 'app/quienes.html', {})
+def quienesc(request):
+    return render(request, 'app/quienesc.html', {})
+def quienesi(request):
+    return render(request, 'app/quienesi.html', {})
 def agregar(request):
 
     data = {

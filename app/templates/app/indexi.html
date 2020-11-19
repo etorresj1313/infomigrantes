@@ -26,7 +26,12 @@
 						<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 						<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 						<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-						<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+						<nav>
+							<ul>
+								<li><a style="text-decoration:none;color: white;" href="{% url 'menu' %}">Login</a></li>
+							</ul>
+						</nav>
+							<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 							<ol class="carousel-indicators">
 							  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 							  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -59,8 +64,8 @@
 							<ul>
 								<li><a style="text-decoration:none;color: white;" href="{% url 'indexi' %}">Home</a></li>
 								<li><a style="text-decoration:none;color: white;" href="{% url 'galeriai' %}">Gallery</a></li>
+								<li><a style="text-decoration:none;color: white;" href="{% url 'quienesi' %}">Who We Are</a></li>
 								<li><a style="text-decoration:none;color: white;" href="{% url 'contacto' %}">Contact</a></li>
-								<li><a style="text-decoration:none;color: white;" href="{% url 'menu' %}">Users</a></li>
 							</ul>
 						</nav>
 					</header>
@@ -69,11 +74,16 @@
 							<article id="intro">
 								<h2>Introduction</h2>
 								<p> </p>
-								<p>Welcome to our site, brothers. This site was designed to support and guide you in your immigration proceedings. Besides having information about the most important sites, we will recommend some support networks to facilitate your integration while you are in our country.</p>
-								<p>Also if you need us to help you remember the dates of your important procedures, we have a service that at the time of registration, will enable a custom control panel, according to your needs and the type of procedure you are doing, the site will generate alerts to the dates and deadlines.</p>
+								<p>Welcome to our site, brothers. This site was designed to support and guide you in your immigration proceedings.</p>
+								<p>Besides having information about the most important sites, we will recommend some support networks to facilitate your</p> 
+								<p>integration while you are in our country. Also if you need us to help you remember the dates of your important procedures,</p>
+								<p>we have a service that at the time of registration, will enable a custom control panel, according to your needs and the</p>
+								<p>type of procedure you are doing, the site will generate alerts to the dates and deadlines.</p>
+								<P> </p>
 								<p>Thank you for visiting us and we hope to be a help or support for you!</p>
 							</article>
 					</div>
+					<P> </p>
 					<footer id="footer">
 						<p>Immigrant Assistance Site - 2020</p>
 					</footer>
