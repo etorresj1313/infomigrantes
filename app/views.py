@@ -1,6 +1,9 @@
 from django.shortcuts import render,redirect, get_object_or_404
 from .models import Agregar, Users
-from .forms import AgregarForm, UsersForm
+from .forms import AgregarForm, UsersForm, CreationForm
+from django.contrib.auth import authenticate, login
+
+
 
 # Create your views here.
 def index(request):
@@ -82,3 +85,21 @@ def eliminar(request, rut):
     usuarios = get_object_or_404(Agregar,rut=rut)
     usuarios.delete()
     return redirect(to="elimlista")
+
+def registro(request):
+    data = {
+        'form':CreationForm()
+    }
+
+    if request.method == 'POST':
+        formulario = CreationForm(data=request.POST)
+        if formulario.is_valid():
+            formulario.save()
+            user = authenticate(username=formulario.cleaned_data["username"], password=formulario.cleaned_data["password1"])
+            login(request, user)
+            data["mensaje"] = "Usuario Registrado exitosamente"
+            return redirect(to="index")
+        data["form"] = formulario
+    return render(request, 'registration/registro.html', data)
+
+ 

@@ -2,6 +2,7 @@ from django.contrib import admin
 from .models import Users, Agregar
 
 
+
 class AgregarAdmin(admin.ModelAdmin):
     list_display = ["rut", "nombres", "apellidos", "edad", "fecha_creacion", "nacionalidad", "direccion", "correo", "telefono"]
 

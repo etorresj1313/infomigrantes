@@ -1,5 +1,6 @@
 from django.urls import path
-from .views import index,galeria,contacto,agregar,listar,menu,modificar,modlista,eliminar,elimlista
+from .views import index,galeria,contacto,agregar,listar,menu,modificar,modlista,eliminar,elimlista,registro
+
 
 urlpatterns = [
     path('', index, name="index"),
@@ -11,5 +12,6 @@ urlpatterns = [
     path('modlista/', modlista, name="modlista"),
     path('elimlista/', elimlista, name="elimlista"),
     path('modificar/<rut>/', modificar, name="modificar"),
-    path('eliminar/<rut>/', eliminar, name="eliminar"),    
+    path('eliminar/<rut>/', eliminar, name="eliminar"), 
+    path('registro/', registro, name="registro"),
 ]
