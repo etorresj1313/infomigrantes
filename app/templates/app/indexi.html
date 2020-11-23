@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="es-419">
 	<head>
-		<title>Sitio de Ayuda Para Inmigrantes</title>
+		<title>Immigrant Assistance Site</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		{% load static %}
@@ -17,7 +17,7 @@
 							{% load static %}
 							<img class="img-fluid" src="{% static 'app/img/logo1.png' %}" alt="Logo">
 						</div>
-						<div>	<h1>¡Bienvenidos a InfoMigrantes!</h1>
+						<div>	<h1>Welcome to InfoMigrantes!</h1>
 						</div>
 						<div><a href="{% url 'indexc' %}"><img class="img-fluid" src="{% static 'app/img/haiti.png' %}" alt="haiti"></a>
 							<a href="{% url 'indexi' %}"><img class="img-fluid" src="{% static 'app/img/ingles.png' %}" alt="ingles"></a>
@@ -30,16 +30,15 @@
 							<ul>
 								{% if user.is_authenticated %}
 							<li>
-								<a style="text-decoration:none;color: white;" href="{% url 'logout' %}">Cerrar Sesión</a>
+								<a style="text-decoration:none;color: white;" href="{% url 'logout' %}">Logout</a>
 							</li>
 							{% else %}
 							<li>
-								<a style="text-decoration:none;color: white;" href="{% url 'login' %}">Iniciar Sesión</a>
+								<a style="text-decoration:none;color: white;" href="{% url 'login' %}">Login</a>
 							</li>
 							{% endif %}
 							</ul>
-						</nav>						
-						<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+						</nav>							<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 							<ol class="carousel-indicators">
 							  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 							  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -47,15 +46,15 @@
 							</ol>
 							<div class="carousel-inner">
 							  <div class="carousel-item active">
-								{% load static %}}
+								{% load static %}
 								<img class="img-fluid" src="{% static 'app/img/colombianos.jpg' %}" alt="Primer slide">
 							  </div>
 							  <div class="carousel-item">
-								{% load static %}}
+								{% load static %}
 								<img class="img-fluid" src="{% static 'app/img/peruanos.jpg' %}" alt="Segundo slide">
 							  </div>
 							  <div class="carousel-item">
-								{% load static %}}
+								{% load static %}
 								<img class="img-fluid" src="{% static 'app/img/venezolanos.jpg' %}" alt="Tercer slide">
 							  </div>
 							</div>
@@ -68,43 +67,43 @@
 							  <span class="sr-only">Next</span>
 							</a>
 						  </div>
-						  <nav>
+						<nav>
 							<ul>
-								<li><a style="text-decoration:none;color: white;" href="{% url 'index' %}">Inicio</a></li>
-								<li><a style="text-decoration:none;color: white;" href="{% url 'galeria' %}">Galería</a></li>
-								<li><a style="text-decoration:none;color: white;" href="{% url 'quienes' %}">Quienes Somos</a></li>
-								<li><a style="text-decoration:none;color: white;" href="{% url 'contacto' %}">Contacto</a></li>
+								<li><a style="text-decoration:none;color: white;" href="{% url 'indexi' %}">Home</a></li>
+								<li><a style="text-decoration:none;color: white;" href="{% url 'galeriai' %}">Gallery</a></li>
+								<li><a style="text-decoration:none;color: white;" href="{% url 'quienesi' %}">Who We Are</a></li>
+								<li><a style="text-decoration:none;color: white;" href="{% url 'contacto' %}">Contact</a></li>
 							</ul>
 						</nav>
 					</header>
 					<div>
 						<P> </p>
 							<article id="intro">
-								<h2>Introducción</h2>
+								<h2>Introduction</h2>
 								<p> </p>
-								<p>Bienvenidos a nuestro sitio hermanos. Este sitio fue diseñado para poder apoyarlos y guiarlos en sus trámites migratorios.</p>
-								<p>Además de contar con información de los sitios de mayor importancia, recomendaremos algunas redes de apoyo para poder</p>
-								<p>facilitar tu integración mientras estas en nuestro país. También si necesitas que podamos ayudarte en recordar las fechas</p>
-								<p>de tus trámites importantes, contamos con un servicio que al momento de registrarte, se habilitara un panel de control </p>
-								<p>personalizado, según tus necesidades y el tipo de trámite que estés realizando, el sitio generará alertas a las fechas y</p>
-								<p>plazos necesarios.</p>
+								<p>Welcome to our site, brothers. This site was designed to support and guide you in your immigration proceedings.</p>
+								<p>Besides having information about the most important sites, we will recommend some support networks to facilitate your</p> 
+								<p>integration while you are in our country. Also if you need us to help you remember the dates of your important procedures,</p>
+								<p>we have a service that at the time of registration, will enable a custom control panel, according to your needs and the</p>
+								<p>type of procedure you are doing, the site will generate alerts to the dates and deadlines.</p>
+								<P> </p>
 							</article>
 							<P> </p>
 								<article id="intro">
-									<h2>Dentro de Nuestro Sitio Podrás:</h2>
+									<h2>Inside our site you will be able to:</h2>
 									<p> </p>
-									<li>Contar con información de agrupaciones y redes de apoyo de los inmigrantes residentes en nuestro país.</li>
-									<li>Revisar la documentación requerida para el proceso migratorio.</li>
-									<li>Al registrarte, podrás registrar los trámites y documentos que ya tienes listos.</li>
-									<li>Si necesitas ponerte en contacto sin registro puedes llenar nuestro formulario.</li>
-									<li>Revisar nuestra galería con imagenes de noticias y agrupaciones variadas de immigrates</li>
+									<li>To have information about groups and support networks of immigrants living in our country.</li>
+									<li>Review the documentation required for the migration process.</li>
+									<li>When you register, you will be able to register the procedures and documents that you already have ready.</li>
+									<li>If you need to contact us without registering you can fill out our form.</li>
+									<li>Check out our gallery with news images and various immigrant groups</li>
 									<P> </p>
-									<p>Gracias por visitarnos y esperamos ser una ayuda o apoyo para ti!</p>
+									<p>Thank you for visiting us and we hope to be a help or support for you!</p>
 								</article>
-						</div>
+					</div>
 					<P> </p>
 					<footer id="footer">
-						<p>Sitio de Ayuda para Inmigrantes - 2020</p>
+						<p>Immigrant Assistance Site - 2020</p>
 					</footer>
 			</div>
 			<div id="bg"></div>

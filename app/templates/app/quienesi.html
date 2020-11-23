@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="es-419">
+	<head>
+		<title>Immigrant Assistance Site</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		{% load static %}
+		<link rel="stylesheet" href="{% static 'app/assets/css/main.css' %}" />
+		<noscript><link rel="stylesheet" href="{% static 'app/assets/css/noscript.css' %}" /></noscript>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body class="is-preload">
+			<div id="wrapper">
+				{% load static %}
+				<p><a href="{% url 'indexi' %}"><img src="{% static 'app/img/back.png' %}" alt="volver"></a> Back</p>
+				<P> </p>
+					<header id="header">
+					<div>
+						{% load static %}
+						<img class="img-fluid" src="{% static 'app/img/delogo.png' %}" alt="Logo">
+					</div>
+					<div>	<h1>Who We Are</h1>
+					</div>
+				</header>
+						<P> </p>
+							<article id="intro">
+								<p> </p>
+								<p>We are a young company dedicated to IT. We are a team that has experience in different branches of our discipline and we are passionate about what we do.</p>
+								<p>We believe that through information technology we can be a contribution to the people who prefer us and become enablers of the ideas that our client needs.</p>
+								<p>Thank you for preferring us</p>
+							</article>			
+							<img class="img-fluid" src="{% static 'app/img/informaticos.jpg' %}" alt="Logo">			
+							<P> </p>
+								<h2>Our Mission</h2>
+							<article id="intro">
+								<p> </p>
+								<p>In this social project we want to contribute to a problem that often occurs in our country. This problem is about the population of immigrants who have </p> 
+								<p>recently arrived. Many people who are immigrants often have problems as much as they do in the process of integration and documentation. </p>
+								<p>Also as a society we are not empathic with them. We want to change this and with what we do we have the security that we can contribute with a grain</p> 
+								<p>of sand to this cause. We want to thank the foreign department that contributed to this project.</p>
+							</article>
+							<p> </p>
+							<img class="img-fluid" src="{% static 'app/img/extrangeria.png' %}" alt="Logo">			
+					<footer id="footer">
+						<p>Immigrant Assistance Site - 2020</p>
+					</footer>
+			</div>
+			<div id="bg"></div>
+			{% load static %}
+			<script src="{% static 'app/assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'app/assets/js/browser.min.js' %}"></script>
+			<script src="{% static 'app/assets/js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'app/assets/js/util.js' %}"></script>
+			<script src="{% static 'app/assets/js/main.js' %}"></script>
+	</body>
+</html>
