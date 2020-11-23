@@ -12,6 +12,10 @@ def indexc(request):
     return render(request, 'app/indexc.html', {}) 
 def indexi(request):
     return render(request, 'app/indexi.html', {}) 
+def loginc(request):
+    return render(request, 'registration/loginc.html', {}) 
+def logini(request):
+    return render(request, 'registration/logini.html', {}) 
 def menu(request):
     return render(request, 'app/menu.html', {}) 
 def contacto(request):
