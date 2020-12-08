@@ -1,6 +1,7 @@
+import requests
 from django.shortcuts import render,redirect, get_object_or_404
-from .models import Agregar, Users
-from .forms import AgregarForm, UsersForm, CreationForm
+from .models import Agregar, Users, City
+from .forms import AgregarForm, UsersForm, CreationForm, CityForm
 from django.contrib.auth import authenticate, login
 
 
@@ -120,4 +121,30 @@ def registro(request):
         data["form"] = formulario
     return render(request, 'registration/registro.html', data)
 
- 
+def weather(request):
+    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&appid=17c8f96424c265befcd1aa5a0b92c876'
+    if request.method == 'POST':
+        form = CityForm(request.POST)
+        form.save()
+
+    form = CityForm()
+
+    cities = City.objects.all()
+
+    weather_data = []
+
+    for city in cities:
+
+        r = requests.get(url.format(city)).json()
+
+        city_weather = {
+            'city' : city.name,
+            'temperature' : r['main']['temp'],
+            'description' : r['weather'][0]['description'],
+            'icon' : r['weather'][0]['icon'],
+        }
+
+        weather_data.append(city_weather)
+
+    context = {'weather_data' : weather_data, 'form' : form}
+    return render(request, 'app/weather.html', context)
