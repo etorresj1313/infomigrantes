@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import index,galeria,contacto,agregar,listar,menu,modificar,modlista,eliminar,elimlista,registro,indexc,galeriac,indexi,galeriai,quienes,quienesc,quienesi,loginc,logini
+from .views import index,galeria,contacto,agregar,listar,menu,modificar,modlista,eliminar,elimlista,registro,indexc,galeriac,indexi,galeriai,quienes,quienesc,quienesi,loginc,logini,weather
 
 
 urlpatterns = [
@@ -23,4 +23,5 @@ urlpatterns = [
     path('registro/', registro, name="registro"),
     path('loginc/', loginc, name="loginc"),
     path('logini/', logini, name="logini"),
+    path('weather/', weather, name="weather"),
 ]
