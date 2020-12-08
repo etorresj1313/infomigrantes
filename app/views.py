@@ -2,6 +2,7 @@ from django.shortcuts import render,redirect, get_object_or_404
 from .models import Agregar, Users
 from .forms import AgregarForm, UsersForm, CreationForm
 from django.contrib.auth import authenticate, login
+#from django.contrib.auth.decorators import login_required, permission required
 
 
 
