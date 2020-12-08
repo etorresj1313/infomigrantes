@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="es-419">
 	<head>
-		<title>Sitio de Ayuda Para Inmigrantes</title>
+		<title>Sit Èd Imigran an</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		{% load static %}
@@ -17,7 +17,7 @@
 							{% load static %}
 							<img class="img-fluid" src="{% static 'app/img/logo1.png' %}" alt="Logo">
 						</div>
-						<div>	<h1>¡Bienvenidos a InfoMigrantes!</h1>
+						<div>	<h1>Byenveni nan InfoMigrantes!</h1>
 						</div>
 						<div><a href="{% url 'indexc' %}"><img class="img-fluid" src="{% static 'app/img/haiti.png' %}" alt="haiti"></a>
 							<a href="{% url 'indexi' %}"><img class="img-fluid" src="{% static 'app/img/ingles.png' %}" alt="ingles"></a>
@@ -28,17 +28,17 @@
 						<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 						<nav>
 							<ul>
-							{% if user.is_authenticated %}
+								{% if user.is_authenticated %}
 							<li>
-								<a style="text-decoration:none;color: white;" href="{% url 'menu' %}">Ir al Sistema</a>
+								<a style="text-decoration:none;color: white;" href="{% url 'menu' %}">Ale Nan Sistèm Lan</a>
 							</li>
 							{% else %}
 							<li>
-								<a style="text-decoration:none;color: white;" href="{% url 'login' %}">Iniciar Sesión</a>
+								<a style="text-decoration:none;color: white;" href="{% url 'login' %}">Ouvri Sesyon An</a>
 							</li>
 							{% endif %}
 							</ul>
-						</nav>						
+						</nav>							
 						<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 							<ol class="carousel-indicators">
 							  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -68,43 +68,43 @@
 							  <span class="sr-only">Next</span>
 							</a>
 						  </div>
-						  <nav>
+						<nav>
 							<ul>
-								<li><a style="text-decoration:none;color: white;" href="{% url 'index' %}">Inicio</a></li>
-								<li><a style="text-decoration:none;color: white;" href="{% url 'galeria' %}">Galería</a></li>
-								<li><a style="text-decoration:none;color: white;" href="{% url 'quienes' %}">Quienes Somos</a></li>
-								<li><a style="text-decoration:none;color: white;" href="{% url 'contacto' %}">Contacto</a></li>
+								<li><a style="text-decoration:none;color: white;" href="{% url 'indexc' %}">Kòmanse</a></li>
+								<li><a style="text-decoration:none;color: white;" href="{% url 'galeriac' %}">Galeri</a></li>
+								<li><a style="text-decoration:none;color: white;" href="{% url 'quienesc' %}">Sou Nou</a></li>
+								<li><a style="text-decoration:none;color: white;" href="{% url 'contacto' %}">Kontakte</a></li>
 							</ul>
 						</nav>
 					</header>
 					<div>
 						<P> </p>
 							<article id="intro">
-								<h2>Introducción</h2>
+								<h2>Entwodiksyon</h2>
 								<p> </p>
-								<p>Bienvenidos a nuestro sitio hermanos. Este sitio fue diseñado para poder apoyarlos y guiarlos en sus trámites migratorios.</p>
-								<p>Además de contar con información de los sitios de mayor importancia, recomendaremos algunas redes de apoyo para poder</p>
-								<p>facilitar tu integración mientras estas en nuestro país. También si necesitas que podamos ayudarte en recordar las fechas</p>
-								<p>de tus trámites importantes, contamos con un servicio que al momento de registrarte, se habilitara un panel de control </p>
-								<p>personalizado, según tus necesidades y el tipo de trámite que estés realizando, el sitio generará alertas a las fechas y</p>
-								<p>plazos necesarios.</p>
+								<p>Byenveni nan sit frè nou yo. Sit sa a te fèt pou kapab sipòte ak gide ou nan pwosedi imigrasyon ou yo. </p>
+								<p>Anplis de sa nan gen enfòmasyon sou sit sa yo ki pi enpòtan, nou pral rekòmande kèk rezo sipò fasilite entegrasyon</p>
+								<p>ou pandan w ap nan peyi nou an. Epitou si ou bezwen nou ede ou sonje dat yo nan pwosedi enpòtan ou, nou gen yon sèvis</p>
+								<p>ki nan moman enskripsyon an, yon panèl kontwòl pèsonalize yo pral pèmèt, selon bezwen ou yo ak ki kalite pwosedi w ap</p>
+								<p>pote soti, sit la pral jenere alèt yo dat ki nesesè yo ak dat limit yo.</p>
+								<P> </p>
 							</article>
 							<P> </p>
-								<article id="intro">
-									<h2>Dentro de Nuestro Sitio Podrás:</h2>
-									<p> </p>
-									<li>Contar con información de agrupaciones y redes de apoyo de los inmigrantes residentes en nuestro país.</li>
-									<li>Revisar la documentación requerida para el proceso migratorio.</li>
-									<li>Al registrarte, podrás registrar los trámites y documentos que ya tienes listos.</li>
-									<li>Si necesitas ponerte en contacto sin registro puedes llenar nuestro formulario.</li>
-									<li>Revisar nuestra galería con imagenes de noticias y agrupaciones variadas de immigrates</li>
-									<P> </p>
-									<p>Gracias por visitarnos y esperamos ser una ayuda o apoyo para ti!</p>
-								</article>
-						</div>
+							<article id="intro">
+								<h2>Nan sit nou an ou ka:</h2>
+								<p> </p>
+								<li>Gen enfòmasyon sou gwoup ak rezo sipò imigran ki abite nan peyi nou an.</li>
+								<li>Revize dokiman ki nesesè pou pwosesis imigrasyon an.</li>
+								<li>Lè ou enskri, ou ka enskri pwosedi yo ak dokiman ke ou deja pare.</li>
+								<li>Si ou bezwen kontakte san enskripsyon ou ka ranpli fòm nou an.</li>
+								<li>Tcheke galri nou an ak imaj nouvèl ak divès kalite imigran</li>
+								<P> </p>
+								<p>Mèsi pou vizite nou e nou espere ke yo pral nan èd oswa sipò pou ou!</p>
+							</article>
+					</div>
 					<P> </p>
 					<footer id="footer">
-						<p>Sitio de Ayuda para Inmigrantes - 2020</p>
+						<p>Sit Èd Imigran an - 2020</p>
 					</footer>
 			</div>
 			<div id="bg"></div>

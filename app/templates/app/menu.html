@@ -9,8 +9,18 @@
 		<noscript><link rel="stylesheet" href="{% static 'app/assets/css/noscript.css' %}" /></noscript>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script type="text/javascript">  
+			function googleTranslateElementInit() {  
+				new google.translate.TranslateElement( 
+					{pageLanguage: 'es'},  
+					'google_translate_element' 
+				);  
+			}  
+		</script>  
+		<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 	</head>
 	<body class="is-preload">
+		<div id="google_translate_element"></div>   	
 			<div id="wrapper">
 					<header id="header">
 						<div>
@@ -21,11 +31,23 @@
 						</div>
 						<nav>
 							<ul>
+								{% if perms.app.add_contacto %}
 								<li><a style="text-decoration:none;color: white;" href="{% url 'agregar' %}">Agregar</a></li>
+								{% endif %}	
 								<li><a style="text-decoration:none;color: white;" href="{% url 'listar' %}">Listar</a></li>
+								{% if perms.app.change_contacto %}
 								<li><a style="text-decoration:none;color: white;" href="{% url 'modlista' %}">Modificar</a></li>
+								{% endif %}	
+								{% if perms.app.delete_contacto %}
 								<li><a style="text-decoration:none;color: white;" href="{% url 'elimlista' %}">Eliminar</a></li>
+								{% endif %}	
+								<li><a style="text-decoration:none;color: white;" href="{% url 'weather' %}">Panel Clima</a></li>
 								<li><a style="text-decoration:none;color: white;" href="{% url 'index' %}">Inicio</a></li>
+								{% if user.is_authenticated %}
+								<li>
+									<a href="{% url 'logout' %}">cerrar sesión</a>
+								</li>
+								{% endif %}
 							</ul>
 						</nav>
 					</header>
