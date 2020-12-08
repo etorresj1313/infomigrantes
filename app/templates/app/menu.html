@@ -31,10 +31,16 @@
 						</div>
 						<nav>
 							<ul>
+								{% if perms.app.add_contacto %}
 								<li><a style="text-decoration:none;color: white;" href="{% url 'agregar' %}">Agregar</a></li>
+								{% endif %}	
 								<li><a style="text-decoration:none;color: white;" href="{% url 'listar' %}">Listar</a></li>
+								{% if perms.app.change_contacto %}
 								<li><a style="text-decoration:none;color: white;" href="{% url 'modlista' %}">Modificar</a></li>
+								{% endif %}	
+								{% if perms.app.delete_contacto %}
 								<li><a style="text-decoration:none;color: white;" href="{% url 'elimlista' %}">Eliminar</a></li>
+								{% endif %}	
 								<li><a style="text-decoration:none;color: white;" href="{% url 'weather' %}">Panel Clima</a></li>
 								<li><a style="text-decoration:none;color: white;" href="{% url 'index' %}">Inicio</a></li>
 								{% if user.is_authenticated %}
